@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <title>Select Dropdown</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="css/jquery.selectBoxIt.css" />
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 100px auto 0;
+        }
+
+        .dropdown {
+            display: inline-block;
+            width: 30%;
+        }
+
+        .dropdown select {
+            width: 100%;
+        }
+
+        .dropdown .selectboxit-container {
+            width: 100%;
+        }
+
+        .dropdown .selectboxit-container .selectboxit {
+            width: 100% !important;
+            background-color: #383639;
+            color: #fff;
+            background-image: url(images/down-arrow-white.png);
+            background-size: 13px;
+            background-position: right 10px center;
+            background-attachment: scroll;
+            background-repeat: no-repeat;
+            border: none;
+            padding: 0 27px 0 15px;
+            height: 50px;
+            line-height: 50px;
+        }
+
+        .selectboxit-list .selectboxit-option-anchor {
+            font-size: 13px;
+            border-top: 1px solid rgba(238, 238, 238, 0.4);
+        }
+
+        .dropdown .selectboxit-container span,
+        .dropdown .selectboxit-container .selectboxit-options a {
+            height: 50px;
+            line-height: 50px;
+            display: block;
+            color: #fff;
+            transition: all 0.3s ease 0s;
+            -webkit-transition: all 0.3s ease 0s;
+        }
+
+        .selectboxit-list>.selectboxit-focus>.selectboxit-option-anchor {
+            color: #ffffff;
+            background: rgba(243, 244, 245, 0.35);
+        }
+
+        .dropdown .selectboxit-container .selectboxit-options {
+            width: 100%;
+            border-radius: 0px 0 5px 5px;
+            margin-top: -3px;
+        }
+
+        .dropdown .selectboxit-default-arrow {
+            border: 0;
+        }
+
+        .dropdown .selectboxit-container .selectboxit {
+            border-radius: 5px;
+        }
+
+        .selectboxit-list {
+            background-color: #383639;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <div class="dropdown">
+            <select class="">
+                <option>Bitte auswählen</option>
+                <option>100</option>
+                <option>110</option>
+                <option>130</option>
+                <option>135</option>
+                <option>140</option>
+                <option>145</option>
+                <option>150</option>
+                <option>155</option>
+                <option>160</option>
+                <option>165</option>
+                <option>170</option>
+                <option>175</option>
+                <option>650</option>
+                <option>700</option>
+                <option>750</option>
+            </select>
+        </div>
+        <div class="dropdown">
+            <select class="">
+                <option>Bitte auswählen</option>
+                <option>99</option>
+                <option>60</option>
+                <option>70</option>
+                <option>80</option>
+                <option>90</option>
+            </select>
+        </div>
+        <div class="dropdown">
+            <select class="">
+                <option>Bitte auswählen</option>
+                <option>R12</option>
+                <option>R18</option>
+            </select>
+        </div>
+    </main>
+    <footer></footer>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+    <script src="js/jquery.selectBoxIt.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function(){
+            jQuery('select').selectBoxIt({
+                'numSearchCharacters': 1
+            });
+        });
+    </script>
+</body>
+</html>
